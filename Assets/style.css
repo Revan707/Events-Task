@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header .myAlmali {
+    height: 120px;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+.header_left {
+    display: flex;
+}
+
+.search_input {
+    width: 600px;
+    height: 30px;
+    margin: 20px;
+    margin-top: 70px;
+}
+
+.header_title {
+    display: flex;
+}
+
+.header .myMenu {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    display: none;
+}
+
+.header_top {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+}
+
+.menu_body {
+    border: 1px solid gray;
+    width: 300px;
+    font-size: 12px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+
+}
+
+.body_main {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(231, 5, 5);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.body_main h3:hover {
+    color: rgba(51, 51, 51, 0.7);
+}
+
+@media screen and (max-width:1024px) {
+    .header .myMenu {
+        display: block;
+    }
+
+    .header_top {
+        display: flex;
+    }
+
+    .body_main h3 {
+        display: none;
+    }
+    .header_left{
+        flex-direction: column;
+    }
+
+}
